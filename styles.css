@@ -63,6 +63,6 @@ body { color: var(--lavender); font-family: ui-monospace, SFMono-Regular, Menlo,
   .approx { display: block; margin: 5px 0 0; font-size: 7px; }
   .site-footer { gap: 8px; font-size: .62rem; letter-spacing: .08em; }
   .correlation-toggle { bottom: 48px; }
-  .isotype-watermark { right: .9rem; bottom: .9rem; width: 2.5rem; }
+  .isotype-watermark { left: .9rem; top: .9rem; width: 3.5rem; }
 }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition-duration: .01ms !important; scroll-behavior: auto !important; } }
