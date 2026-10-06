@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#030303">
+  <title>NULL-002 — Mexica Calendar</title>
+  <link rel="icon" href="favicon/favicon_dark.svg" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="favicon/favicon_light.svg" media="(prefers-color-scheme: light)">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="canvas" aria-labelledby="project-title">
+
+    <section class="readout" aria-label="Calendar layers">
+      <article class="layer" data-layer="tonal" tabindex="0" aria-expanded="false" aria-controls="details-tonal">
+        <div class="value-line">
+          <div class="context context-top" aria-hidden="true">260-DAY SACRED CYCLE</div>
+          <span class="value" id="tonal-value">— —</span>
+          <span class="unit" id="gregorian-date">CR-01 ESTIMATE</span>
+        </div>
+        <div class="layer-label">TONALPOHUALLI</div>
+        <div class="details" id="details-tonal" hidden>
+          <p>A 260-day count formed by interlocking 13 numbers and 20 day signs. The estimate advances from the historical 1 Cóatl anchor, accounting for Tena’s pre-conquest intercalary day.</p>
+          <p class="equation">13 × 20 = 260 days</p>
+        </div>
+      </article>
+
+      <article class="layer" data-layer="xiuh" tabindex="0" aria-expanded="false" aria-controls="details-xiuh">
+        <div class="value-line">
+          <div class="context context-top" aria-hidden="true">365-DAY SOLAR CYCLE</div>
+          <span class="value" id="xiuh-value">— —</span>
+          <span class="unit">CR-01 ESTIMATE</span>
+        </div>
+        <div class="layer-label">XIUHPOHUALLI</div>
+        <div class="details" id="details-xiuh" hidden>
+          <p>A 365-day year: 18 veintenas of 20 days, followed by 5 nemontemi days. Tena adds a sixth nemontemi in the pre-conquest 2 Técpatl year; the post-conquest projection does not extend that intercalation.</p>
+          <p class="equation">(18 × 20) + 5 = 365 days</p>
+        </div>
+      </article>
+
+      <article class="layer" data-layer="round" tabindex="0" aria-expanded="false" aria-controls="details-round">
+        <div class="value-line">
+          <div class="context context-top" aria-hidden="true">52-YEAR CALENDAR ROUND</div>
+          <span class="value" id="round-value">— —</span>
+          <span class="unit" id="round-reference">≈ GREGORIAN REFERENCE</span>
+        </div>
+        <div class="layer-label">CALENDAR ROUND <span class="approx">≈ GREGORIAN REFERENCE</span></div>
+        <div class="details" id="details-round" hidden>
+          <p>The two counts return to the same pairing every 18,980 days. This pairing is calculated with CR-01; its Gregorian placement is an estimate under Tena’s historical model.</p>
+          <p class="equation">73 × 260 = 52 × 365 = 18,980 days</p>
+        </div>
+      </article>
+    </section>
+
+    <button class="correlation-toggle" type="button" aria-expanded="false" aria-controls="correlation-panel">CORRELATION / CR-01 <span aria-hidden="true">+</span></button>
+    <aside class="correlation" id="correlation-panel" hidden>
+      <div class="correlation-heading">PROVISIONAL CORRELATION / MODEL OUTPUT</div>
+      <p><strong>CR-01 · Rafael Tena approach</strong></p>
+      <p>CR-01 applies Rafael Tena’s reconstruction. Its anchor is 1 Cóatl on 13 August 1521 (Julian), reported for the fall of Tenochtitlan. Historical Julian dates are converted to equivalent Gregorian dates for day counting; modern display dates use the browser’s local Gregorian date.</p>
+      <p class="status"><span class="status-dot"></span> TENA MODEL ACTIVE · HISTORICAL CORRELATION APPROXIMATE</p>
+      <p>Tena’s model proposes a sixth nemontemi in selected years. Ivan Šprajc argues against regular intercalation based on the broader evidence. A second commonly cited anchor, Cortés’s entry on 8 November 1519, has a one-day discrepancy against the 1521 anchor.</p>
+      <p class="small-note">Validation fixtures: 8 Ehécatl on 8 November 1519, with the duplicated intercalary day accounted for; and 1 Cóatl on 13 August 1521.</p>
+      <p class="source-links"><a href="https://nahuatl.historicas.unam.mx/index.php/ecn/article/download/78644/69585/231804" target="_blank" rel="noreferrer">Alfonso Caso, “Nuevos datos…”</a><span>·</span><a href="https://doi.org/10.22201/iia.24486221e.2000.1.394" target="_blank" rel="noreferrer">Ivan Šprajc, “Problema de ajustes…”</a><span>·</span><a href="https://www.arqueologiamexicana.mx/mexico-antiguo/el-ano-bisiesto-y-la-cultura-nahua" target="_blank" rel="noreferrer">Tena and the Nahua leap day</a></p>
+    </aside>
+
+    <footer class="site-footer">
+      <span><span class="footer-accent">ST3114-GR33N</span> // NULL</span>
+      <span>Project ID: <a href="https://github.com/st311a-gr33n/NULL-001_Maya-Long-Count">NULL-002</a></span>
+      <a href="https://github.com/st311a-gr33n" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
